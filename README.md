@@ -1,0 +1,1 @@
+just my fish config
