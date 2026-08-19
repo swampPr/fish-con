@@ -53,6 +53,8 @@ if status is-interactive; and command -q fastfetch
     fastfetch
 end
 
+
+
 # -------------------------
 # asdf
 # -------------------------
@@ -68,6 +70,7 @@ set -gx FZF_DEFAULT_OPTS "
 --layout=reverse
 --border=rounded
 --info=inline-right
+--prompt=' '
 --preview-window=right:60%
 --preview '[ -d {} ] && tree -C {} | head -200 || batcat --style=numbers --color=always {}'
 --bind 'ctrl-u:preview-half-page-up'
@@ -125,3 +128,5 @@ function fish_user_key_bindings
     bind \cf "commandline -r fdv; commandline -f execute"
 end
 
+
+fish_add_path /home/jd/.spicetify
