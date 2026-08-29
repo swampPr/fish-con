@@ -11,9 +11,7 @@ end
 # -------------------------
 # Environment
 # -------------------------
-set -gx ASDF_DATA_DIR ~/.asdf
 fish_add_path ~/bin
-fish_add_path ~/.asdf/shims
 fish_add_path ~/.spicetify
 fish_add_path ~/.cargo/bin
 if status is-interactive
@@ -55,12 +53,6 @@ end
 
 
 
-# -------------------------
-# asdf
-# -------------------------
-if test -f ~/.asdf/plugins/golang/set-env.fish
-    source ~/.asdf/plugins/golang/set-env.fish
-end
 
 # -------------------------
 # FZF
@@ -130,3 +122,4 @@ end
 
 
 fish_add_path /home/jd/.spicetify
+mise activate fish | source
