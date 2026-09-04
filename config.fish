@@ -51,7 +51,13 @@ if status is-interactive; and command -q fastfetch
     fastfetch
 end
 
+# Start PostgreSQL and MySQL
 
+
+function dbstart
+    sudo systemctl start postgresql mysql
+    systemctl is-active postgresql mysql
+end
 
 
 # -------------------------
