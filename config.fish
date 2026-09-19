@@ -70,7 +70,7 @@ set -gx FZF_DEFAULT_OPTS "
 --info=inline-right
 --prompt=' '
 --preview-window=right:60%
---preview '[ -d {} ] && tree -C {} | head -200 || batcat --style=numbers --color=always {}'
+--preview '[ -d {} ] && tree -C {} | head -200 || batcat --theme=Nord --style=numbers --color=always {}'
 --bind 'ctrl-u:preview-half-page-up'
 --bind 'ctrl-d:preview-half-page-down'
 --color='hl:#00afff,hl+:#00afff,pointer:#00afff,marker:#00afff,info:#5fd7ff,prompt:#5fd7ff,border:#B1AED5'
@@ -129,3 +129,5 @@ end
 
 fish_add_path /home/jd/.spicetify
 mise activate fish | source
+
+fish_add_path /home/jd2818/.spicetify
